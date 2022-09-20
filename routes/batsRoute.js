@@ -28,4 +28,16 @@ router.get("/bats", (req, res) => {
     res.status(200).json(batsList);
 })
 
+// GET specific bat by ID
+router.get("/bats/:batId", (req, res) => {
+    const bats = readBats();
+    const specificBat = bats.find(bat => bat.id === req.params.batId);
+
+    if (!specificBat) {
+        res.status(400).json({error: "Bat not found. Please enter a valid bat ID."})
+    }
+
+    res.status(200).json(specificBat);
+})
+
 module.exports = router;
