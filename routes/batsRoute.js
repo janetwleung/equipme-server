@@ -16,11 +16,13 @@ router.get("/bats", (req, res) => {
             {
                 "id": bat.id,
                 "brand": bat.brand,
+                "category": bat.category,
                 "name": bat.name,
                 "image": bat.image1,
                 "price": bat.price,
                 "size": bat.size,
-                "type": bat.type
+                "type": bat.type,
+                "description": bat.description
             }
         );
     })

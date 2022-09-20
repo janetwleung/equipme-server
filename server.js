@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8080;
 const cors = require("cors");
 const glovesRoute = require("./routes/glovesRoute");
 const batsRoute = require("./routes/batsRoute");
+const cleatsRoute = require("./routes/cleatsRoute");
 
 // Allows front-end to interact with our API
 app.use(cors());
@@ -15,6 +16,7 @@ app.use("/images", express.static('./public/images'));
 // Link routes
 app.use(glovesRoute);
 app.use(batsRoute);
+app.use(cleatsRoute);
 
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`);

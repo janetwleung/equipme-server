@@ -16,12 +16,14 @@ router.get("/gloves", (req, res) => {
             {
                 "id": glove.id,
                 "brand": glove.brand,
+                "category": glove.category,
                 "name": glove.name,
                 "image": glove.image1,
                 "price": glove.price,
                 "size": glove.size,
                 "pocket": glove.open,
-                "position": glove.position
+                "position": glove.position,
+                "description": glove.description
             }
         );
     })
