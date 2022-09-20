@@ -14,11 +14,11 @@ router.get("/gloves", (req, res) => {
     const glovesList = gloves.map(glove => {
         return (
             {
+                "id": glove.id,
                 "brand": glove.brand,
                 "name": glove.name,
                 "image": glove.image1,
                 "price": glove.price,
-                "id": glove.id,
                 "size": glove.size,
                 "pocket": glove.open,
                 "position": glove.position
@@ -26,6 +26,18 @@ router.get("/gloves", (req, res) => {
         );
     })
     res.status(200).json(glovesList);
+})
+
+// GET specific glove by id
+router.get("/gloves/:gloveId", (req, res) => {
+    const gloves = readGloves();
+    const specificGloveData = gloves.find(glove => glove.id === req.params.gloveId)
+
+    if (!specificGloveData) {
+        return res.status(400).json({error: "Glove not found. Please enter a valid glove ID."});
+    }
+
+    return res.status(200).json(specificGloveData);
 })
 
 module.exports = router;
