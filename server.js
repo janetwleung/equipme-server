@@ -6,6 +6,7 @@ const cors = require("cors");
 const glovesRoute = require("./routes/glovesRoute");
 const batsRoute = require("./routes/batsRoute");
 const cleatsRoute = require("./routes/cleatsRoute");
+const sportsRoute = require("./routes/sportsRoute");
 
 // Allows front-end to interact with our API
 app.use(cors());
@@ -17,6 +18,7 @@ app.use("/images", express.static('./public/images'));
 app.use(glovesRoute);
 app.use(batsRoute);
 app.use(cleatsRoute);
+app.use(sportsRoute);
 
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`);

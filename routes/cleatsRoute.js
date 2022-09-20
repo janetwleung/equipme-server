@@ -40,4 +40,4 @@ router.get("/cleats/:cleatId", (req, res) => {
     return res.status(200).json(specificCleatData);
 })
 
-module.exports = router
+module.exports = router;
