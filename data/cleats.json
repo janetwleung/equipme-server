@@ -5,5 +5,12 @@
         "name": "Pro Knit TPU Dominant Cleats",
         "price": "$129.99",
         "id": "e4a0605b-a49d-4432-865a-d09acf3805b6"
+    },
+    {
+        "brand": "Mizuno",
+        "category": "cleats",
+        "name": "Dominant Metal Cleats",
+        "price": "$99.99",
+        "id": "g0a2615b-a49d-4432-8s5a-d09asf38g2b6"
     }
 ]

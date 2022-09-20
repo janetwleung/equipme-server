@@ -9,7 +9,7 @@ function readCleats() {
 }
 
 // GET endpoint for list of all cleats
-router.use("/cleats", (req, res) => {
+router.get("/cleats", (req, res) => {
     const cleats = readCleats();
     const cleatsList = cleats.map(cleat => {
         return (
@@ -24,6 +24,20 @@ router.use("/cleats", (req, res) => {
         );
     })
     res.status(200).json(cleatsList);
+})
+
+// GET endpoint for specific cleat
+router.get("/cleats/:cleatId", (req, res) => {
+    const cleats = readCleats();
+    const specificCleatData = cleats.find(cleat => cleat.id === req.params.cleatId);
+
+    console.log(specificCleatData);
+
+    if (!specificCleatData) {
+        return res.status(400).json({error: "Cleat not found. Please enter a valid cleat ID."})
+    }
+
+    return res.status(200).json(specificCleatData);
 })
 
 module.exports = router
