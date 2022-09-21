@@ -1,13 +1,13 @@
 const knex = require('knex')(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+// const fs = require("fs");
 
-function readBats() {
-    const batsFile = fs.readFileSync("./data/bats.json");
-    const batsData = JSON.parse(batsFile);
-    return batsData;
-}
+// function readBats() {
+//     const batsFile = fs.readFileSync("./data/bats.json");
+//     const batsData = JSON.parse(batsFile);
+//     return batsData;
+// }
 
 // GET all bats
 router.get("/bats", (req, res) => {
