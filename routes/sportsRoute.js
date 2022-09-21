@@ -28,10 +28,6 @@ router.get("/sports/:sportId", (req, res) => {
     const sports = readSports();
     const specificSportData = sports.find(sport => sport.id === req.params.sportId);
 
-    console.log(sports[0].id);
-    console.log(req.params.sportId);
-    console.log(specificSportData);
-
     if (!specificSportData) {
         return res.status(404).json({error: "Sport not found. Please enter a valid sport id"})
     }
