@@ -1,3 +1,4 @@
+const knex = require("knex")(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
@@ -10,18 +11,27 @@ function readSports() {
 
 // GET endpoint for list of sports offered
 router.get("/sports", (req, res) => {
-    const sports = readSports();
-    const sportsList = sports.map(sport => {
-        return (
-            {
-                "id": sport.id,
-                "sport": sport.sport,
-                "image": sport.image,
-                "hoverImage": sport.hoverImage,
-            }
-        );
-    });
-    res.status(200).json(sportsList);
+    // const sports = readSports();
+    // const sportsList = sports.map(sport => {
+    //     return (
+    //         {
+    //             "id": sport.id,
+    //             "sport": sport.sport,
+    //             "image": sport.image,
+    //             "hoverImage": sport.hoverImage,
+    //         }
+    //     );
+    // });
+    // res.status(200).json(sportsList);
+    knex   
+        .select("*")
+        .from("sports")
+        .then(sportsResponse => {
+            res.status(200).json(sportsResponse);
+        })
+        .catch(error => {
+            res.status(500).json({error: "There has been an error fetching the data"})
+        })
 })
 
 router.get("/sports/:sportId", (req, res) => {
