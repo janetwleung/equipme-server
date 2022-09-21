@@ -35,14 +35,24 @@ router.get("/sports", (req, res) => {
 })
 
 router.get("/sports/:sportId", (req, res) => {
-    const sports = readSports();
-    const specificSportData = sports.find(sport => sport.id === req.params.sportId);
+    // const sports = readSports();
+    // const specificSportData = sports.find(sport => sport.id === req.params.sportId);
 
-    if (!specificSportData) {
-        return res.status(404).json({error: "Sport not found. Please enter a valid sport id"})
-    }
+    // if (!specificSportData) {
+    //     return res.status(404).json({error: "Sport not found. Please enter a valid sport id"})
+    // }
 
-    return res.status(200).json(specificSportData);
+    // return res.status(200).json(specificSportData);
+    knex
+        .select("*")
+        .from("sports")
+        .where({id: req.params.sportId})
+        .then(sportResponse => {
+            res.status(200).json(sportResponse[0])
+        })
+        .catch(error => {
+            res.status(500).json({error: "There has been an error fetching the data"})
+        })
 })
 
 module.exports = router;
