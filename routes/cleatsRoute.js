@@ -1,13 +1,13 @@
 const knex = require("knex")(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+// const fs = require("fs");
 
-function readCleats() {
-    const cleatsFile = fs.readFileSync("./data/cleats.json");
-    const cleatsData = JSON.parse(cleatsFile);
-    return cleatsData;
-}
+// function readCleats() {
+//     const cleatsFile = fs.readFileSync("./data/cleats.json");
+//     const cleatsData = JSON.parse(cleatsFile);
+//     return cleatsData;
+// }
 
 // GET endpoint for list of all cleats
 router.get("/cleats", (req, res) => {
@@ -38,14 +38,24 @@ router.get("/cleats", (req, res) => {
 
 // GET endpoint for specific cleat
 router.get("/cleats/:cleatId", (req, res) => {
-    const cleats = readCleats();
-    const specificCleatData = cleats.find(cleat => cleat.id === req.params.cleatId);
+    // const cleats = readCleats();
+    // const specificCleatData = cleats.find(cleat => cleat.id === req.params.cleatId);
 
-    if (!specificCleatData) {
-        return res.status(404).json({error: "Cleat not found. Please enter a valid cleat ID."})
-    }
+    // if (!specificCleatData) {
+    //     return res.status(404).json({error: "Cleat not found. Please enter a valid cleat ID."})
+    // }
 
-    return res.status(200).json(specificCleatData);
+    // return res.status(200).json(specificCleatData);
+    knex
+        .select("*")
+        .from("cleats")
+        .where({uuid: req.params.cleatId})
+        .then(cleatResponse => {
+            res.status(200).json(cleatResponse[0]);
+        })
+        .catch(error => {
+            res.status(500).json({error: "There has been an error fetching the data"});
+        });
 })
 
 module.exports = router;
