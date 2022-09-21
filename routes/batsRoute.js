@@ -1,3 +1,4 @@
+const knex = require('knex')(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
@@ -10,24 +11,33 @@ function readBats() {
 
 // GET all bats
 router.get("/bats", (req, res) => {
-    const bats = readBats();
-    const batsList = bats.map(bat => {
-        return (
-            {
-                "id": bat.id,
-                "brand": bat.brand,
-                "category": bat.category,
-                "name": bat.name,
-                "image": bat.image1,
-                "price": bat.price,
-                "size": bat.size,
-                "type": bat.type,
-                "description": bat.description
-            }
-        );
-    })
+    // const bats = readBats();
+    // const batsList = bats.map(bat => {
+    //     return (
+    //         {
+    //             "id": bat.id,
+    //             "brand": bat.brand,
+    //             "category": bat.category,
+    //             "name": bat.name,
+    //             "image": bat.image1,
+    //             "price": bat.price,
+    //             "size": bat.size,
+    //             "type": bat.type,
+    //             "description": bat.description
+    //         }
+    //     );
+    // })
 
-    res.status(200).json(batsList);
+    // res.status(200).json(batsList);
+    knex
+        .select("*")
+        .from("bats")
+        .then(batsResponse => {
+            res.status(200).json(batsResponse);
+        })
+        .catch(error => {
+            res.status(500).json({error: "There has been an error fetching the data"})
+        })
 })
 
 // GET specific bat by ID

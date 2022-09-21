@@ -1,13 +1,13 @@
 const knex = require('knex')(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+// const fs = require("fs");
 
-function readGloves() {
-    const glovesFile = fs.readFileSync("./data/gloves.json");
-    const glovesData = JSON.parse(glovesFile);
-    return glovesData;
-}
+// function readGloves() {
+//     const glovesFile = fs.readFileSync("./data/gloves.json");
+//     const glovesData = JSON.parse(glovesFile);
+//     return glovesData;
+// }
 
 // GET list of all gloves
 router.get("/gloves", (req, res) => {
@@ -50,7 +50,7 @@ router.get("/gloves/:gloveId", (req, res) => {
     // }
 
     // return res.status(200).json(specificGloveData);
-    console.log(req.params.gloveId);
+
     knex 
         .select("*")
         .from("gloves")
