@@ -31,10 +31,8 @@ router.get("/cleats/:cleatId", (req, res) => {
     const cleats = readCleats();
     const specificCleatData = cleats.find(cleat => cleat.id === req.params.cleatId);
 
-    console.log(specificCleatData);
-
     if (!specificCleatData) {
-        return res.status(400).json({error: "Cleat not found. Please enter a valid cleat ID."})
+        return res.status(404).json({error: "Cleat not found. Please enter a valid cleat ID."})
     }
 
     return res.status(200).json(specificCleatData);

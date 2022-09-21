@@ -36,7 +36,7 @@ router.get("/bats/:batId", (req, res) => {
     const specificBat = bats.find(bat => bat.id === req.params.batId);
 
     if (!specificBat) {
-        res.status(400).json({error: "Bat not found. Please enter a valid bat ID."})
+        res.status(404).json({error: "Bat not found. Please enter a valid bat ID."})
     }
 
     res.status(200).json(specificBat);
