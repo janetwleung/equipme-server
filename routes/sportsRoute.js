@@ -14,6 +14,7 @@ router.get("/sports", (req, res) => {
     const sportsList = sports.map(sport => {
         return (
             {
+                "id": sport.id,
                 "sport": sport.sport,
                 "image": sport.image,
                 "hoverImage": sport.hoverImage,
