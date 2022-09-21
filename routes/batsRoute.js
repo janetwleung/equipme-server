@@ -37,19 +37,29 @@ router.get("/bats", (req, res) => {
         })
         .catch(error => {
             res.status(500).json({error: "There has been an error fetching the data"})
-        })
-})
+        });
+});
 
 // GET specific bat by ID
 router.get("/bats/:batId", (req, res) => {
-    const bats = readBats();
-    const specificBat = bats.find(bat => bat.id === req.params.batId);
+    // const bats = readBats();
+    // const specificBat = bats.find(bat => bat.id === req.params.batId);
 
-    if (!specificBat) {
-        res.status(404).json({error: "Bat not found. Please enter a valid bat ID."})
-    }
+    // if (!specificBat) {
+    //     res.status(404).json({error: "Bat not found. Please enter a valid bat ID."})
+    // }
 
-    res.status(200).json(specificBat);
-})
+    // res.status(200).json(specificBat);
+    knex   
+        .select("*")
+        .from("bats")
+        .where({uuid: req.params.batId})
+        .then(batResponse => {
+            res.status(200).json(batResponse[0]);
+        })
+        .catch(error => {
+            res.status(400).json({error: "There has been an error fetching the data"});
+        });
+});
 
 module.exports = router;
