@@ -19,8 +19,8 @@ exports.up = function (knex) {
             table.string("sport").notNullable();
             table.string("left").notNullable();
             table.string("right").notNullable();
-            table.string("whereToBy").notNullable();
-            table.string("id1").notNullable();
+            table.string("whereToBuy").notNullable();
+            table.string("uuid").notNullable();
             table
                 .integer('brand_id')
                 .unsigned()
@@ -41,7 +41,7 @@ exports.up = function (knex) {
             table.string("age").notNullable();
             table.string("length").notNullable();
             table.string("whereToBuy").notNullable();
-            table.string("id1").notNullable();
+            table.string("uuid").notNullable();
             table
                 .integer('brand_id')
                 .unsigned()
@@ -59,7 +59,7 @@ exports.up = function (knex) {
             table.string("image1").notNullable();
             table.string("image2").notNullable();
             table.string("price").notNullable();
-            table.string("id1").notNullable();
+            table.string("uuid").notNullable();
             table
                 .integer('brand_id')
                 .unsigned()
