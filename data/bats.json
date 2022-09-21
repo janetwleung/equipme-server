@@ -132,5 +132,18 @@
         "length": "30\", 31\", 32\", 33\", 34\"",
         "whereToBuy": "https://easton.rawlings.com/product/FP22GHAD.html",
         "id": "bb9a5e3d-34b9-4cd7-b377-f45d93edd7bf"
+    },
+    {
+        "brand": "Easton",
+        "category": "bats",
+        "name": "2022 EASTON AMETHYST FASTPITCH BAT, -11",
+        "description": "The Easton® Diamond Gem bat collection includes the Amethyst, which is crafted from ALX50™ Alloy for extended durability and balanced performance. The light swing weight and large sweet spot create power, while an ultra-thin All-Sports grip helps you keep all that power under control. If you’re ready to dominate the diamond, you’re ready to take your swings with Diamond Gem collection.",
+        "image1": "http://localhost:8080/images/bats/easton/2022-easton-11-amethyst-fastpitch-bat.jpeg",
+        "image2": "http://localhost:8080/images/bats/easton/2022-easton-11-amethyst-fastpitch-bat-1.jpeg",
+        "price": "$67.96",
+        "age": "9, 10, 11, 12, 13, 14, 15",
+        "length": "27\", 28\", 29\", 30\", 31\", 32\"",
+        "whereToBuy": "https://easton.rawlings.com/product/FP22AMY.html",
+        "id": "fe821c30-507e-41c0-b865-6c725648c21b"
     }
 ]
