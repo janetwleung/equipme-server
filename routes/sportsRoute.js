@@ -1,13 +1,13 @@
 const knex = require("knex")(require("../knexfile"));
 const express = require("express");
 const router = express.Router();
-const fs = require("fs");
+// const fs = require("fs");
 
-function readSports() {
-    const sportsFile = fs.readFileSync("./data/sports.json");
-    const sportsData = JSON.parse(sportsFile);
-    return sportsData;
-}
+// function readSports() {
+//     const sportsFile = fs.readFileSync("./data/sports.json");
+//     const sportsData = JSON.parse(sportsFile);
+//     return sportsData;
+// }
 
 // GET endpoint for list of sports offered
 router.get("/sports", (req, res) => {
