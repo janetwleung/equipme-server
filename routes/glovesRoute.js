@@ -42,14 +42,25 @@ router.get("/gloves", (req, res) => {
 
 // GET specific glove by id
 router.get("/gloves/:gloveId", (req, res) => {
-    const gloves = readGloves();
-    const specificGloveData = gloves.find(glove => glove.id === req.params.gloveId)
+    // const gloves = readGloves();
+    // const specificGloveData = gloves.find(glove => glove.id === req.params.gloveId)
 
-    if (!specificGloveData) {
-        return res.status(404).json({error: "Glove not found. Please enter a valid glove ID."});
-    }
+    // if (!specificGloveData) {
+    //     return res.status(404).json({error: "Glove not found. Please enter a valid glove ID."});
+    // }
 
-    return res.status(200).json(specificGloveData);
+    // return res.status(200).json(specificGloveData);
+    console.log(req.params.gloveId);
+    knex 
+        .select("*")
+        .from("gloves")
+        .where({uuid: req.params.gloveId})
+        .then(gloveResponse => {
+            res.status(200).json(gloveResponse[0]);
+        })
+        .catch(error => {
+            res.status(500).json({error: "There has been an error fetching the data"});
+        });
 })
 
 module.exports = router;
