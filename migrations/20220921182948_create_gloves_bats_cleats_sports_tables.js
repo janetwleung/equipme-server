@@ -74,6 +74,7 @@ exports.up = function (knex) {
             table.increments('id').primary();
             table.string('sport').notNullable();
             table.string("image").notNullable();
+            table.string("hoverImage").notNullable();
             table.string("formInput1").notNullable();
             table.string("formInput2").notNullable();
             table.string("formInput3").notNullable();
