@@ -11,6 +11,7 @@ exports.up = function (knex) {
             table.string('name').notNullable();
             table.string("image1").notNullable();
             table.string("image2").notNullable();
+            table.string("description").notNullable();
             table.string("price").notNullable();
             table.string("size").notNullable();
             table.string("pocket").notNullable();
@@ -37,6 +38,7 @@ exports.up = function (knex) {
             table.string('name').notNullable();
             table.string("image1").notNullable();
             table.string("image2").notNullable();
+            table.string("description").notNullable();
             table.string("price").notNullable();
             table.string("age").notNullable();
             table.string("length").notNullable();
@@ -58,6 +60,7 @@ exports.up = function (knex) {
             table.string('name').notNullable();
             table.string("image1").notNullable();
             table.string("image2").notNullable();
+            table.string("description").notNullable();
             table.string("whereToBuy").notNullable();
             table.string("price").notNullable();
             table.string("uuid").notNullable();
