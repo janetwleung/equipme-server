@@ -46,7 +46,7 @@ module.exports = [
         brand_id: 2,
         category: "bats",
         name: "2023 Rawlings Mantra 2.0 Fastpitch Bat (-9, -10)",
-        image1: "http://localhost:8080/images/bats/rawlings/2023-mantra-2.0-fastpitch-bat.jpeg",
+        image1: "http://localhost:8080/images/bats/rawlings/2023-mantra-2.0-fastpitch-bat.png",
         image2: "http://localhost:8080/images/bats/rawlings/2023-mantra-2.0-fastpitch-bat-1.jpeg",
         description: "What's your mantra? This 2023 Rawlings Mantra 2.0 Fastpitch Bat helps you bring an elite level of focus, discipline, and power with you to the plate. Crafted with an innovative three-step inner barrel, this bat perfectly balances swing speed and massive pop. Also, the 2023 Mantra features our thinnest outer barrel yet, creating unmatched trampoline on contact. The fully reconstructed F2 collar assembly creates the perfect harmony between flex and stiffness, and the ultra-light end cap makes it easy for any hitter to whip this bat through the zone.",
         price: "$399.95",
