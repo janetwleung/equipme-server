@@ -630,7 +630,7 @@ module.exports = [
         brand: "Mizuno",
         brand_id: 1,
         category: "gloves",
-        name: "PROSPECT SELECT SERIES INFIELD BASEBALL GLOVE 11\"",
+        name: "PROSPECT SELECT YOUTH SERIES INFIELD BASEBALL GLOVE 11\"",
         image1: "http://localhost:8080/images/gloves/mizuno/prospect-select-series-infield-baseball-glove-11.jpeg",
         image2: "http://localhost:8080/images/gloves/mizuno/prospect-select-series-infield-baseball-glove-11-1.jpeg",
         description: "Mizuno Prospect Select offers the youth player a full grain leather glove, providing the same high end look and feel as the pros for the player looking to take the next step.",
@@ -644,5 +644,24 @@ module.exports = [
         right: "yes",
         whereToBuy: "https://www.mizunousa.com/ca/product/baseball-gpsl1100-prspct-select-11in/312568",
         uuid: "9d71288f-f4ea-4b11-87db-af99b840784a"
+    },
+    {
+        brand: "Mizuno",
+        brand_id: 1,
+        category: "gloves",
+        name: "PROSPECT SERIES YOUTH BASEBALL FIRST BASE MITT 12.5\"",
+        image1: "http://localhost:8080/images/gloves/mizuno/mizuno-prospect-series-youth-baseball-first-base-mitt-12.5.jpeg",
+        image2: "http://localhost:8080/images/gloves/mizuno/mizuno-prospect-series-youth-baseball-first-base-mitt-12.5-1.jpeg",
+        description: "Mizuno Prospect Series uses full grain pigskin leather, providing great durability, enhanced softness, and Mizuno’s innovative easy close technologies, making catching easy. All to help your Prospect learn to love the game.",
+        price: "$110.00",
+        size: "12.5\"",
+        pocket: "Open",
+        color: "Black",
+        position: "First base",
+        sport: "Baseball",
+        left: "yes",
+        right: "yes",
+        whereToBuy: "https://www.mizunousa.com/ca/product/baseball-gxf102-prospect-youth-fbm/312110?isB=true",
+        uuid: "0f97a7a3-8530-44c0-a38e-0390717220fb"
     }
 ];
