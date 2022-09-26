@@ -180,5 +180,19 @@ module.exports = [
         length: "24\", 25\", 26\"",
         whereToBuy: "https://www.mizunousa.com/ca/product/softball-finch-tee-ball-13/340611?isB=true",
         uuid: "0eb65ec1-281e-4842-877d-99dd0218513a"
+    },
+    {
+        brand: "Rawlings",
+        brand_id: 2,
+        category: "bats",
+        name: "Quatro Pro College/High School Softball Bat (-10)",
+        image1: "http://localhost:8080/images/bats/rawlings/rawlings-quatro-pro-fastpitch.jpeg",
+        image2: "http://localhost:8080/images/bats/rawlings/rawlings-quatro-pro-fastpitch-1.jpeg",
+        description: "Get more pop, more distance and a faster, lighter swing speed with the all new Quatro Pro - a collision of our best technologies. The redesign of the Q4 technology features a newly constructed inner barrel yielding a larger sweet spot and a faster, more balanced swing for optimal offense. #RawlingsSoftball",
+        price: "$349.95",
+        age: "14, 15, 16, 17, 18, 19, 20+",
+        length: "30\", 31\", 32\", 33\", 34\"",
+        whereToBuy: "https://www.rawlings.com/product/FPQP10.html",
+        uuid: "ffd26156-2346-451f-923a-64f28c3fd3c7"
     }
 ];

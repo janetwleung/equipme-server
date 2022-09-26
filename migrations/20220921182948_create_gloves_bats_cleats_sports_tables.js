@@ -82,10 +82,49 @@ exports.up = function (knex) {
             table.string("formInput2").notNullable();
             table.string("formInput3").notNullable();
             table.string("formInput4").notNullable();
-        });
+        })
+        .createTable('athletes', (table) => {
+            table.increments('id').primary();
+            table.string("name").notNullable();
+            table.string("image1").notNullable();
+            table.string("image2").notNullable();
+            table.string("description", 1000).notNullable();
+            table
+                .integer('sport_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('sports')
+                .onUpdate('CASCADE')
+                .onDelete('CASCADE');
+            table
+                .integer('glove_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('gloves')
+                .onUpdate('CASCADE')
+                .onDelete('CASCADE');
+            table
+                .integer('bat_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('bats')
+                .onUpdate('CASCADE')
+                .onDelete('CASCADE');
+            table
+                .integer('cleat_id')
+                .unsigned()
+                .notNullable()
+                .references('id')
+                .inTable('cleats')
+                .onUpdate('CASCADE')
+                .onDelete('CASCADE');
+        })
   };
 
   
   exports.down = function (knex) {
-    return knex.schema.dropTable('gloves').dropTable('bats').dropTable('cleats').dropTable('sports').dropTable('brands');
+    return knex.schema.dropTable('athletes').dropTable('gloves').dropTable('bats').dropTable('cleats').dropTable('sports').dropTable('brands');
   };

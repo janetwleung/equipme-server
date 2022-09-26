@@ -3,6 +3,7 @@ batsData = require("../seed_data/bats");
 cleatsData = require("../seed_data/cleats");
 sportsData = require("../seed_data/sports");
 brandsData = require("../seed_data/brands");
+athletesData = require("../seed_data/athletes");
 
 exports.seed = function (knex) {
   return knex('brands')
@@ -33,5 +34,11 @@ exports.seed = function (knex) {
     })
     .then(() => {
       return knex('sports').insert(sportsData);
+    })
+    .then(() => {
+      return knex('athletes').del();
+    })
+    .then(() => {
+      return knex('athletes').insert(athletesData);
     });
 }

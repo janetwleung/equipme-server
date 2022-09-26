@@ -7,6 +7,7 @@ const glovesRoute = require("./routes/glovesRoute");
 const batsRoute = require("./routes/batsRoute");
 const cleatsRoute = require("./routes/cleatsRoute");
 const sportsRoute = require("./routes/sportsRoute");
+const athletesRoute = require("./routes/athletesRoute");
 
 // Allows front-end to interact with our API
 app.use(cors());
@@ -23,6 +24,7 @@ app.use(cleatsRoute);
 
 app.use(sportsRoute);
 
+app.use(athletesRoute);
 
 
 app.listen(PORT, () => {

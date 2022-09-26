@@ -663,5 +663,24 @@ module.exports = [
         right: "yes",
         whereToBuy: "https://www.mizunousa.com/ca/product/baseball-gxf102-prospect-youth-fbm/312110?isB=true",
         uuid: "0f97a7a3-8530-44c0-a38e-0390717220fb"
+    },
+    {
+        brand: "Mizuno",
+        brand_id: 1,
+        category: "gloves",
+        name: "Classic Pro Soft 12.75\" Baseball Glove",
+        image1: "http://localhost:8080/images/gloves/mizuno/mizuno-class-pro-outfield-baseball-12.75-glove.jpeg.jpeg",
+        image2: "http://localhost:8080/images/gloves/mizuno/mizuno-class-pro-outfield-baseball-12.75-glove.jpeg-1.jpeg",
+        description: "This Mizuno Classic Pro Soft Series (GCP82S3) baseball glove has a 12.75-inch opening, an H-web and a conventional open back. Made specifically for outfield players, this glove has a deep pocket that makes it easy to capture that last out on running catches deep to the wall. The H-web makes it easier to see the ball right before a transfer. Designed with professional patterns, this line of gloves is created for some of the best players in the game, and it bears the Mizuno patch of quality. Order yours today and enjoy free shipping. Don’t forget, with our 24/7 customer service, we’ll be here for you from click to catch!",
+        price: "$275.00",
+        size: "12.75\"",
+        pocket: "Open",
+        color: "Brown, Blonde",
+        position: "Outfield",
+        sport: "Baseball",
+        left: "yes",
+        right: "yes",
+        whereToBuy: "https://www.cheapbats.com/shop/closeout-mizuno-classic-pro-soft-baseball-glove-1275-gcp82s3-312689-p-10080.html",
+        uuid: "a518de29-56f3-4020-b4c9-9ee5c58faa4c"
     }
 ];
