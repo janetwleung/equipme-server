@@ -30,7 +30,7 @@ router.get("/bats", (req, res) => {
 
     // res.status(200).json(batsList);
     knex
-        .select("*")
+        .select("uuid", "brand_id", "brand", "category", "name", "image1", "price", "length")
         .from("bats")
         .then(batsResponse => {
             res.status(200).json(batsResponse);

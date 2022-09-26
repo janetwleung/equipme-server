@@ -30,7 +30,7 @@ router.get("/gloves", (req, res) => {
     // })
     // res.status(200).json(glovesList);
     knex
-        .select("*")
+        .select("uuid", "category", "brand_id", "brand", "name", "image1", "price", "size", "position")
         .from("gloves")
         .then(glovesData => {
             res.status(200).json(glovesData);
