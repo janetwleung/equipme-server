@@ -26,6 +26,9 @@ app.use(sportsRoute);
 
 app.use(athletesRoute);
 
+app.get("/", (req, res) => {
+    res.send("Welcome to my API")
+})
 
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`);
