@@ -86,9 +86,15 @@ exports.up = function (knex) {
         .createTable('athletes', (table) => {
             table.increments('id').primary();
             table.string("name").notNullable();
+            table.string("number").notNullable();
+            table.string("position").notNullable();
+            table.string("image").notNullable();
             table.string("image1").notNullable();
             table.string("image2").notNullable();
             table.string("description", 1000).notNullable();
+            table.string("glove_uuid").notNullable();
+            table.string("bat_uuid").notNullable();
+            table.string("cleat_uuid").notNullable();
             table
                 .integer('sport_id')
                 .unsigned()
