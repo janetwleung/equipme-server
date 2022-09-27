@@ -92,9 +92,13 @@ exports.up = function (knex) {
             table.string("image1").notNullable();
             table.string("image2").notNullable();
             table.string("description", 1000).notNullable();
-            table.string("glove_uuid").notNullable();
-            table.string("bat_uuid").notNullable();
-            table.string("cleat_uuid").notNullable();
+            table.string("gloveOffsetX");
+            table.string("gloveOffsetY");
+            table.string("cleatOffsetX");
+            table.string("cleatOffsetY");
+            table.string("gloveId").notNullable();
+            table.string("batId").notNullable();
+            table.string("cleatId").notNullable();
             table
                 .integer('sport_id')
                 .unsigned()
