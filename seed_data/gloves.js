@@ -687,7 +687,7 @@ module.exports = [
         brand: "Wilson",
         brand_id: 3,
         category: "gloves",
-        name: "LIMITED EDITION 2021 A2000 1786 COUNTRY PRIDE SERIES CANADA 11.5\" INFIELD BASEBALL GLOVE",
+        name: "LIMITED EDITION 2021 A2000 1786 COUNTRY PRIDE SERIES CANADA 11.5\" GLOVE",
         image1: "https://equipmeserver.herokuapp.com/images/gloves/wilson/country-pride-series-canada.png",
         image2: "https://equipmeserver.herokuapp.com/images/gloves/wilson/country-pride-series-canada-1.png",
         description: "Play with pride. This limited edition 11.5\" A2000 1786 lets Canadian ballplayers rep the Great White North between the lines. Designed with Red and White Pro Stock Leather, Flat Finger Binding and our ComfortPro Lining, it offers all the features you love in an A2000 - with Bold logos that showcase the Canadian flag in distinct fashion on both the thumb and pinky.",
