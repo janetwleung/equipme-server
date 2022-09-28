@@ -170,5 +170,82 @@ module.exports = [
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
+    },
+    {
+        name: "Kelsey Harshman",
+        sport_id: 1,
+        number: "1",
+        position: "Infield",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/kelsey-harshman-headshot.jpg",
+        description: "Team Canada 2nd Baseman, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Kaleigh Rafter",
+        sport_id: 1,
+        number: "1",
+        position: "Catcher",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-headshot.jpg",
+        description: "Team Canada Catcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Kaleigh Rafter",
+        sport_id: 1,
+        number: "1",
+        position: "Catcher",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-headshot.jpg",
+        description: "Team Canada Catcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Joey Lye",
+        sport_id: 1,
+        number: "1",
+        position: "Utility",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/joey-lye-headshot.jpg",
+        description: "Team Canada Utility (Infield/Outfield), Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Danielle Lawrie",
+        sport_id: 1,
+        number: "1",
+        position: "Pitcher",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/danielle-lawrie-headshot.jpg",
+        description: "Team Canada Pitcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Lauren Bay",
+        sport_id: 1,
+        number: "1",
+        position: "Pitcher",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/lauren-bay-headshot.jpg",
+        description: "Team Canada Pitcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
+    },
+    {
+        name: "Jennifer Gilbert",
+        sport_id: 1,
+        number: "1",
+        position: "Outfield",
+        image: "https://equipmeserver.herokuapp.com/images/athletes/jen-gilbert-headshot.jpg",
+        description: "Team Canada Outfield, Tokyo 2020 Olympic Bronze Medalist",
+        glove_id: 3,
+        bat_id: 1,
+        cleat_id: 1 
     }
 ]
