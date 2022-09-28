@@ -48,7 +48,7 @@ module.exports = [
         image1: "https://equipmeserver.herokuapp.com/images/athletes/erika-polidori-defense.jpg",
         image2: "https://equipmeserver.herokuapp.com/images/athletes/erika-polidori-offense.jpg",
         description: "Team Canada Outfielder, Tokyo 2020 Olympic Bronze Medalist",
-        gloveId: "851e4e1e-3397-4053-9a15-68ddd9540f6d",
+        gloveId: "31c7dd34-459d-461c-a85a-27ab9433bfea",
         batId: "ffd26156-2346-451f-923a-64f28c3fd3c7",
         cleatId: "l0a2kj5b-a49d-4432-80xa-d09as124g2b6",
         gloveOffsetX: 160,
