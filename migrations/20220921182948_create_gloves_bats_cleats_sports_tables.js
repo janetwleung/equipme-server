@@ -62,6 +62,7 @@ exports.up = function (knex) {
             table.string("image2").notNullable();
             table.string("description", 2000).notNullable();
             table.string("whereToBuy").notNullable();
+            table.string("metal").notNullable();
             table.string("price").notNullable();
             table.string("uuid").notNullable();
             table
@@ -136,5 +137,5 @@ exports.up = function (knex) {
 
   
   exports.down = function (knex) {
-    return knex.schema.dropTable('athletes').dropTable('gloves').dropTable('bats').dropTable('cleats').dropTable('sports').dropTable('brands');
+    return knex.schema.dropTable('athletes').dropTable('sports').dropTable('cleats').dropTable('bats').dropTable('gloves').dropTable('brands');
   };
