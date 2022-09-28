@@ -27,7 +27,7 @@ app.use(sportsRoute);
 app.use(athletesRoute);
 
 app.get("/", (req, res) => {
-    res.send("Welcome to my API")
+    res.send("Welcome to EquipMe's API");
 })
 
 app.listen(PORT, () => {
