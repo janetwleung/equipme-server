@@ -682,5 +682,24 @@ module.exports = [
         right: "yes",
         whereToBuy: "https://www.cheapbats.com/shop/closeout-mizuno-classic-pro-soft-baseball-glove-1275-gcp82s3-312689-p-10080.html",
         uuid: "a518de29-56f3-4020-b4c9-9ee5c58faa4c"
+    },
+    {
+        brand: "Wilson",
+        brand_id: 3,
+        category: "gloves",
+        name: "LIMITED EDITION 2021 A2000 1786 COUNTRY PRIDE SERIES CANADA 11.5\" INFIELD BASEBALL GLOVE",
+        image1: "https://equipmeserver.herokuapp.com/images/gloves/wilson/country-pride-series-canada.png",
+        image2: "https://equipmeserver.herokuapp.com/images/gloves/wilson/country-pride-series-canada-1.png",
+        description: "Play with pride. This limited edition 11.5\" A2000 1786 lets Canadian ballplayers rep the Great White North between the lines. Designed with Red and White Pro Stock Leather, Flat Finger Binding and our ComfortPro Lining, it offers all the features you love in an A2000 - with Bold logos that showcase the Canadian flag in distinct fashion on both the thumb and pinky.",
+        price: "$299.95",
+        size: "11.5\"",
+        pocket: "Open",
+        color: "Red",
+        position: "Infield",
+        sport: "Baseball",
+        left: "yes",
+        right: "yes",
+        whereToBuy: "https://www.wilson.com/en-us/product/limited-edition-2021-a2000-1786-country-pride-series-canada-11-5-infield-baseball-glove-wbw100901#throwinghand=52622&size=52766",
+        uuid: "2b2723d7-ca68-491f-ae10-ea0604708838"
     }
 ];
