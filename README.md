@@ -181,5 +181,9 @@
 	- OR download ZIP folder from repo
 - Install npm packages
 	- `npm install`
-- Change PORT if needed in .env file
-  - update DB_USER and DB_PASSWORD
+- Create a .env file with the following keys (refer to .env.sample)
+	- PORT=8080
+	- DB_HOST=127.0.0.1
+	- DB_DATABASE=EquipMe
+	- DB_USER=root
+	- DB_PASSWORD=rootroot
