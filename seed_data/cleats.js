@@ -42,6 +42,19 @@ module.exports = [
         brand: "Mizuno",
         brand_id: 1,
         category: "cleats",
+        name: "9-SPIKE ADVANCED FINCH ELITE 4 WOMEN’S TPU MOLDED SOFTBALL CLEAT",
+        image1: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/9-spike-advanced-finch-elite-womens-tpu-molded-cleat.png",
+        image2: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/9-spike-advanced-finch-elite-womens-tpu-molded-cleat-1.jpeg",
+        description: "Designed with input from softball legend Jennie Finch, the 9-Spike Advanced Finch Elite 4 is Gender Engineered for softball-specific movements, providing superior fit, comfort, and versatility. A great option for multi-surface use.",
+        whereToBuy: "https://www.mizunousa.com/ca/product/softball-9-spike-advanced-finch-elite-4/320590",
+        metal: "no",
+        price: "$89.99",
+        uuid: "fecbf59f-b2f1-4e85-bc0e-34e9764e4e54"
+    },
+    {
+        brand: "Mizuno",
+        brand_id: 1,
+        category: "cleats",
         name: "FINCH SELECT NINE YOUTH GIRLS’ MOLDED SOFTBALL CLEAT",
         image1: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/finch-select-nine-youth-girls-molded-softball-cleat.png",
         image2: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/finch-select-nine-youth-girls-molded-softball-cleat-1.jpeg",
@@ -50,18 +63,5 @@ module.exports = [
         metal: "no",
         price: "$60.00",
         uuid: "fcf6acc0-3722-4920-a4bb-cbd95795da2e"
-    },
-    {
-        brand: "Mizuno",
-        brand_id: 1,
-        category: "cleats",
-        name: "9-SPIKE ADVANCED FINCH ELITE 4 WOMEN’S TPU MOLDED SOFTBALL CLEAT",
-        image1: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/9-spike-advanced-finch-elite-womens-tpu-molded-cleat.png",
-        image2: "https://equipmeserver.herokuapp.com/images/cleats/mizuno/9-spike-advanced-finch-elite-womens-tpu-molded-cleat-1.jpeg",
-        description: "Designed with input from softball legend Jennie Finch, the 9-Spike Advanced Finch Elite 4 is Gender Engineered for softball-specific movements, providing superior fit, comfort, and versatility. A great option for multi-surface use.",
-        whereToBuy: "https://www.mizunousa.com/ca/product/softball-9-spike-advanced-finch-elite-4/320590",
-        metal: "yes",
-        price: "$89.99",
-        uuid: "fecbf59f-b2f1-4e85-bc0e-34e9764e4e54"
     }
 ];
