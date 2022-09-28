@@ -183,7 +183,12 @@
 	- `npm install`
 - Create a .env file with the following keys (refer to .env.sample)
 	- PORT=8080
-	- DB_HOST=127.0.0.1
+	- DB_HOST=<HOST_ADDRESS>
 	- DB_DATABASE=EquipMe
-	- DB_USER=root
-	- DB_PASSWORD=rootroot
+	- DB_USER=<YOUR_USER>
+	- DB_PASSWORD=<YOUR_PASSWORD>
+- Run migrations to download database
+	- `npx knex migrate:latest`
+	- `npx knex seed:run`
+- Run server
+	- npm run dev
