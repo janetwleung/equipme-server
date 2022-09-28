@@ -192,7 +192,7 @@ module.exports = [
     {
         name: "Kaleigh Rafter",
         sport_id: 1,
-        number: "1",
+        number: "55",
         position: "Catcher",
         image: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-defense.jpg",
@@ -207,7 +207,7 @@ module.exports = [
     {
         name: "Joey Lye",
         sport_id: 1,
-        number: "1",
+        number: "5",
         position: "Utility",
         image: "https://equipmeserver.herokuapp.com/images/athletes/joey-lye-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/joey-lye-defense.jpg",
@@ -223,7 +223,7 @@ module.exports = [
     {
         name: "Danielle Lawrie",
         sport_id: 1,
-        number: "1",
+        number: "13",
         position: "Pitcher",
         image: "https://equipmeserver.herokuapp.com/images/athletes/danielle-lawrie-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/danielle-lawrie-defense.jpg",
@@ -238,7 +238,7 @@ module.exports = [
     {
         name: "Lauren Bay",
         sport_id: 1,
-        number: "1",
+        number: "38",
         position: "Pitcher",
         image: "https://equipmeserver.herokuapp.com/images/athletes/lauren-bay-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/lauren-bay-defense.jpg",
@@ -253,7 +253,7 @@ module.exports = [
     {
         name: "Jennifer Gilbert",
         sport_id: 1,
-        number: "1",
+        number: "25",
         position: "Outfield",
         image: "https://equipmeserver.herokuapp.com/images/athletes/jen-gilbert-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/jen-gilbert-defense.jpg",
