@@ -191,4 +191,4 @@
 	- `npx knex migrate:latest`
 	- `npx knex seed:run`
 - Run server
-	- npm run dev
+	- `npm run dev`
