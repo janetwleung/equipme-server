@@ -73,8 +73,8 @@ module.exports = [
         cleatId: "e4a0605b-a49d-4432-865a-d09acf3805b6",
         gloveOffsetX: 235,
         gloveOffsetY: 156,
-        cleatOffsetX: 160,
-        cleatOffsetY: 454,
+        cleatOffsetX: 178,
+        cleatOffsetY: 430,
         glove_id: 30,
         bat_id: 1,
         cleat_id: 1 
