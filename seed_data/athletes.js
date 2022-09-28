@@ -68,7 +68,7 @@ module.exports = [
         image1: "https://equipmeserver.herokuapp.com/images/athletes/janet-leung-defense.jpg",
         image2: "https://equipmeserver.herokuapp.com/images/athletes/janet-leung-offense.jpg",
         description: "Team Canada Shortstop, Tokyo 2020 Olympic Bronze Medalist",
-        gloveId: "31c7dd34-459d-461c-a85a-27ab9433bfea",
+        gloveId: "307a1f60-c2a2-4ed5-bcf0-0666fc7152ad",
         batId: "db7bfe71-2375-4223-9007-dc390243dfd4",
         cleatId: "l0a2kj5b-a49d-4432-80xa-d09as124g2b6",
         gloveOffsetX: 235,
