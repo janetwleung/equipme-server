@@ -180,7 +180,7 @@ module.exports = [
         position: "Infield",
         image: "https://equipmeserver.herokuapp.com/images/athletes/kelsey-harshman-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/kelsey-harshman-defense.jpg",
-        image1: "https://equipmeserver.herokuapp.com/images/athletes/kelsey-harshman-offense.jpg",
+        image2: "https://equipmeserver.herokuapp.com/images/athletes/kelsey-harshman-offense.jpg",
         description: "Team Canada 2nd Baseman, Tokyo 2020 Olympic Bronze Medalist",
         glove_id: 3,
         bat_id: 1,
@@ -194,6 +194,8 @@ module.exports = [
         image: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/kaleigh-rafter-defense.jpg",
         description: "Team Canada Catcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        gloveOffsetX: 286,
+        gloveOffsetY: 253,
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
@@ -207,6 +209,8 @@ module.exports = [
         image1: "https://equipmeserver.herokuapp.com/images/athletes/joey-lye-defense.jpg",
         image2: "https://equipmeserver.herokuapp.com/images/athletes/joey-lye-offense.jpg",
         description: "Team Canada Utility (Infield/Outfield), Tokyo 2020 Olympic Bronze Medalist",
+        gloveOffsetX: 207,
+        gloveOffsetY: 99,
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
@@ -219,6 +223,8 @@ module.exports = [
         image: "https://equipmeserver.herokuapp.com/images/athletes/danielle-lawrie-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/danielle-lawrie-defense.jpg",
         description: "Team Canada Pitcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        gloveOffsetX: 253,
+        gloveOffsetY: 69,
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
@@ -229,7 +235,10 @@ module.exports = [
         number: "1",
         position: "Pitcher",
         image: "https://equipmeserver.herokuapp.com/images/athletes/lauren-bay-headshot.jpg",
+        image1: "https://equipmeserver.herokuapp.com/images/athletes/lauren-bay-defense.jpg",
         description: "Team Canada Pitcher, 2x Olympian, Tokyo 2020 Olympic Bronze Medalist",
+        gloveOffsetX: 111,
+        gloveOffsetY: 91,
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
@@ -242,6 +251,8 @@ module.exports = [
         image: "https://equipmeserver.herokuapp.com/images/athletes/jen-gilbert-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/jen-gilbert-defense.jpg",
         description: "Team Canada Outfield, Tokyo 2020 Olympic Bronze Medalist",
+        gloveOffsetX: 208,
+        gloveOffsetY: 219,
         glove_id: 3,
         bat_id: 1,
         cleat_id: 1 
