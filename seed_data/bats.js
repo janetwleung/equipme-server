@@ -10,7 +10,7 @@ module.exports = [
         price: "$349.99",
         age: "12, 13, 14, 15, 16",
         length: "28\", 29\", 30\", 31\", 32\"",
-        whereToBuy: "https://www.mizunousa.com/ca/product/softball-f21-pwr-crbn-10-/340551?isB=true",
+        whereToBuy: "https://www.mizunousa.com/product/softball-f21-pwr-crbn-10-/340551",
         uuid: "db7bfe71-2375-4223-9007-dc390243dfd4"
     },
     {
@@ -24,7 +24,7 @@ module.exports = [
         price: "$499.99",
         age: "16, 17, 18, 19, 20, 21, 22, 23, 24",
         length: "32\", 33\", 34\"",
-        whereToBuy: "https://www.mizunousa.com/ca/product/softball-f21-titanium-10-/340550?isB=true",
+        whereToBuy: "https://www.mizunousa.com/product/softball-f21-titanium-10-/340550",
         uuid: "09544372-c796-4997-a3d7-429e56544bfd"
     },
     {
