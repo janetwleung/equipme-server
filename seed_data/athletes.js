@@ -102,7 +102,6 @@ module.exports = [
         position: "Pitcher",
         image: "https://equipmeserver.herokuapp.com/images/athletes/sara-groenewegen-headshot.jpg",
         image1: "https://equipmeserver.herokuapp.com/images/athletes/sara-groenewegen-defense.jpg",
-        image2: "https://equipmeserver.herokuapp.com/images/athletes/sara-groenewegen-offense.jpg",
         description: "Team Canada Pitcher, Tokyo 2020 Olympic Bronze Medalist",
         gloveId: "2b2723d7-ca68-491f-ae10-ea0604708838",
         batId: "ffd26156-2346-451f-923a-64f28c3fd3c7",
