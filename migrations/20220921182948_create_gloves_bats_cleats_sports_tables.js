@@ -99,6 +99,8 @@ exports.up = function (knex) {
             table.string("batOffsetY");
             table.string("cleatOffsetX");
             table.string("cleatOffsetY");
+            table.string("cleat1OffsetX");
+            table.string("cleat1OffsetY");
             table.string("gloveId")
             table.string("batId")
             table.string("cleatId")
